@@ -1,0 +1,12 @@
+
+<ul>
+  <% places.forEach((place) => { %>
+    <li>
+      <%= place.name %> - $<%= place.descriptions %>
+      <a href="/<%= place._id %>">Place-id</a> |
+      <a href="/<%= place._id %>/edit/">Edit</a> |
+      <a href="/<%= place._id %>/delete/">Delete</a>
+    </li>
+  <%  }) %>
+</ul>
+<a href="/places/new">Add new place</a>
